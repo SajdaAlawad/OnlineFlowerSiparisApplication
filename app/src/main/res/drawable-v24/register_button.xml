@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+ <item>
+     <ripple android:color="@color/white"/>
+ </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#F86B33"
+                android:endColor="#F8C033" />
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_baseline_arrow_forward_24" />
+</layer-list>

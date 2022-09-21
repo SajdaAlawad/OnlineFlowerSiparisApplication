@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.LoginActivity"
+    android:background="@drawable/back7">
+
+    <TextView
+        android:id="@+id/tv_hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="50dp"
+        android:gravity="center"
+        android:text="Hello"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_SignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:gravity="center"
+        android:text="Sign in to your account"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/register_et_backg"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:hint="enter user name"
+        android:padding="10dp"
+        android:paddingLeft="60dp"
+        android:textColor="#000000"
+        android:drawableLeft="@drawable/ic_baseline_person_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_LoginPass"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/register_et_backg"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="#000000"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Email" />
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="56dp"
+        android:text="Login"
+        android:onClick="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Password"
+        />
+
+    <TextView
+        android:id="@+id/tv_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_gravity="center"
+        android:text="if new user,click to register"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Login" />
+
+
+</LinearLayout>
